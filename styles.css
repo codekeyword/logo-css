@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+   background-color: #fdf0d5;
+   color: #003049;
+}
+ .key-item{
+   color: #c1121f;
+   font-size: large;
+   font-size: 48px;
+   font-weight: 1000;
+ }
+.typewriter .code {
+    display: inline-block;
+    overflow: hidden;
+    width: 0px;
+    
+    border-right: .15em solid #780000;
+    animation: blink-caret 0.2s step-end forwards,
+    typingcode 0.8s steps(14) forwards;
+}
+.typewriter .key {
+    display: inline-block;
+    overflow: hidden;    
+    width: 0;
+    border-right: 0 solid #780000;
+    animation: blink-caret .4s step-end 2.8s forwards,
+        typingkey 0.8s steps(14) 3.8s forwards;
+}
+
+.typewriter .word {  
+    width: 0;    
+    border-right: 0 solid #780000;
+    animation: blink-caret .4s step-end 6s infinite,
+        typing1 0.8s steps(14) 6s forwards;
+}
+.sp{
+   display: inline-block;
+   overflow: hidden;
+}
+code {
+    font-size: 34px;
+    font-weight: 600;
+    
+}
+.typewriter {
+    overflow: hidden;
+    width: 350px;
+    }
+
+/* The typing effect */
+@keyframes typing1 {
+    0% {
+        width: 0px
+    }
+
+    100% {
+        width: 92px
+    }
+
+}
+
+@keyframes typingkey {
+    0% {
+        width: 0px
+    }
+   
+    100% {
+        width: 80px 
+    }
+}
+
+
+
+/* The typing effect */
+@keyframes typingcode {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 78px
+    }
+
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+        border-width: 0px;
+    }
+
+    50% {
+        border-color: #780000;
+        border-width: 2px;
+    }
+}
+.bbr{
+   opacity: 0;
+   animation: bracket .1s  2s forwards;
+
+}
+.abr{
+   opacity: 0;
+   animation: bracket .1s  2s forwards;
+ 
+}
+@keyframes bracket {
+   0%,100% {
+       opacity: 1;
+   }
+
+}
+@keyframes bracketb {
+   0% {
+       content: "";
+   }
+
+   100% {
+       content: "{";
+   }
+}
