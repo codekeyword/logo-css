@@ -21,22 +21,22 @@ body {
     
     border-right: .15em solid #780000;
     animation: blink-caret 0.2s step-end forwards,
-    typingcode 0.8s steps(14) forwards;
+    typingcode 0.6s steps(14) forwards;
 }
 .typewriter .key {
     display: inline-block;
     overflow: hidden;    
     width: 0;
     border-right: 0 solid #780000;
-    animation: blink-caret .4s step-end 2.8s forwards,
-        typingkey 0.8s steps(14) 3.8s forwards;
+    animation: blink-caret .4s step-end 0.9s forwards,
+        typingkey 0.8s steps(10) 0.9s forwards;
 }
 
 .typewriter .word {  
     width: 0;    
     border-right: 0 solid #780000;
-    animation: blink-caret .4s step-end 6s infinite,
-        typing1 0.8s steps(14) 6s forwards;
+    animation: blink-caret .4s step-end 1.6s infinite,
+        typing1 0.6s steps(14) 1.6s forwards;
 }
 .sp{
    display: inline-block;
@@ -74,8 +74,6 @@ code {
     }
 }
 
-
-
 /* The typing effect */
 @keyframes typingcode {
     0% {
@@ -104,12 +102,12 @@ code {
 }
 .bbr{
    opacity: 0;
-   animation: bracket .1s  2s forwards;
+   animation: bracket .1s  0.8s forwards;
 
 }
 .abr{
    opacity: 0;
-   animation: bracket .1s  2s forwards;
+   animation: bracket .1s  0.8s forwards;
  
 }
 @keyframes bracket {
