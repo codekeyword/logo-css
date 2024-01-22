@@ -12,7 +12,7 @@ body {
  .key-item{
    color: #c1121f;
    font-size: large;
-   font-size: 48px;
+   font-size: 3rem;
    font-weight: 1000;
  }
 .typewriter .code {
@@ -44,7 +44,7 @@ body {
    overflow: hidden;
 }
 code {
-    font-size: 34px;
+    font-size: 2.2rem;
     font-weight: 600;
     
 }
