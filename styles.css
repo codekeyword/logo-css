@@ -6,7 +6,8 @@ body {
     justify-content: center;
     height: 100vh;
    background-color: #fdf0d5;
-   color: #003049;
+   color: hwb(201 0% 71%);
+   box-shadow: inset 0px 0px 30px 30px rgba(0,0,0,0.1), inset 1px 0px 30px 30px rgba(0,0,0,0.1)
 }
  .key-item{
    color: #c1121f;
@@ -19,24 +20,24 @@ body {
     overflow: hidden;
     width: 0px;
     
-    border-right: .15em solid #780000;
-    animation: blink-caret 0.2s step-end forwards,
-    typingcode 0.6s steps(14) forwards;
+    border-right: 0 solid #780000;
+    animation: blink-caret 0.2s step-start 1.2s forwards,
+    typingcode 0.6s steps(14) 1.2s forwards;
 }
 .typewriter .key {
     display: inline-block;
     overflow: hidden;    
     width: 0;
     border-right: 0 solid #780000;
-    animation: blink-caret .4s step-end 0.9s forwards,
-        typingkey 0.8s steps(10) 0.9s forwards;
+    animation: blink-caret .4s step-end 2.1s forwards,
+        typingkey 0.8s steps(10) 2.1s forwards;
 }
 
 .typewriter .word {  
     width: 0;    
     border-right: 0 solid #780000;
-    animation: blink-caret .4s step-end 1.6s infinite,
-        typing1 0.6s steps(14) 1.6s forwards;
+    animation: blink-caret .4s step-end 3.1s infinite,
+        typing1 0.6s steps(14) 3.1s forwards;
 }
 .sp{
    display: inline-block;
@@ -86,7 +87,7 @@ code {
 
 }
 
-/* The typewriter cursor effect */
+/* The typewriter cursor effectS */
 @keyframes blink-caret {
 
     from,
@@ -102,12 +103,12 @@ code {
 }
 .bbr{
    opacity: 0;
-   animation: bracket .1s  0.8s forwards;
+   animation: bracket .1s  2s forwards;
 
 }
 .abr{
    opacity: 0;
-   animation: bracket .1s  0.8s forwards;
+   animation: bracket .1s  2s forwards;
  
 }
 @keyframes bracket {
